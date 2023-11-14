@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30% 30rem 10rem;
+}
+header {
+    background-color: rgb(13, 5, 255);
+    grid-column: 1/4;
+    grid-row: 1/1;
+}
+main {
+    background: red;
+    grid-column: 1/4;
+    grid-template-rows: 2/2;
+}
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    width: 50%;
+    height: 50%;
+}
+article {
+    background-color: rebeccapurple;
+    width: 80%;
+    height: 80%;
+}
+footer {
+    grid-column: 1/4;
+    grid-row: 3/3;
+    background-color: black;
+}
